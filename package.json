@@ -1,0 +1,23 @@
+{
+  "name": "curso_cypress",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/RonaldoCesar28/AdoPet#readme",
+  "bugs": {
+    "url": "https://github.com/RonaldoCesar28/AdoPet/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RonaldoCesar28/AdoPet.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "cypress": "^15.13.1"
+  }
+}
