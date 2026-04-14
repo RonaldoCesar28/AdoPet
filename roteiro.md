@@ -1,7 +1,7 @@
 
-Funcionalidade: Cadastro no site Adopet
+1 Funcionalidade: Cadastro no site Adopet
 
-Cenário: Realizar um cadastro no site com sucesso
+1.1 Cenário: Realizar um cadastro no site com sucesso
 
 Passos:
 
@@ -22,7 +22,7 @@ Regra de Negócio:
 E-mail e senha são campos obrigatórios para o cadastro.
 
 
-Cenário: Falha na tentativa de cadastro
+1.2 Cenário: Falha na tentativa de cadastro
 
 Passos:
 
@@ -36,9 +36,9 @@ O sistema valida os campos obrigatórios em branco.
 O sistema exibe mensagens de erro indicando que os campos obrigatórios devem ser preenchidos.
 
 
-Funcionalidade: Login no site Adopet
+2 Funcionalidade: Login no site Adopet
 
-Cénario: Login no sistema com sucesso
+2.1 Cenário: Login no sistema com sucesso
 
 Passos:
 
@@ -52,3 +52,20 @@ O sistema autentica as credenciais fornecidas.
 O sistema redireciona o usuário para a página "/home".
 
 
+2.2 Cenário: Falha no login do sistema
+
+Passos:
+
+O usuário acessa a página de login.
+O usuário insere um e-mail e senha fora do padrão aceito nos campos correspondentes.
+O usuário clica no botão "Entrar".
+
+Resultados Esperados:
+
+O sistema valida as credenciais fornecidas.
+O sistema exibe mensagens de erro específicas para o e-mail e senha inseridos incorretamente, como: "Por favor, verifique o e-mail digitado" e/ou "A senha deve conter pelo menos uma letra maiúscula, um número e ter entre 6 e 15 caracteres".
+
+Regra de Negócio:
+
+O e-mail deve ter um formato válido.
+A senha deve conter pelo menos uma letra maiúscula, um número e ter entre 6 e 15 caracteres
