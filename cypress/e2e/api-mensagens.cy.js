@@ -1,5 +1,4 @@
 describe('Api Adopet', () => {
-    const tempoEsperado = Math.random() * 1000 // método tempo aleatório multiplicado pelo tempo de espera 1000 equivalente a 1 segundo
     const authorization = `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJlYWU5MjUzOS1hNzE0LTQ1MzktYTMzMC0xYmU3ZjAyYmVlNGMiLCJhZG9wdGVyTmFtZSI6IlJvbmFsZG8gQ2VzYXIiLCJpYXQiOjE3NzY2NDc3NDcsImV4cCI6MTc3NjkwNjk0N30.uN4ilbKHRHVOzVkAVX4sqbwgTI4mlaJJtOgqNKe-7ew`
 
     it('Mensagens da API', () => {
@@ -11,7 +10,6 @@ describe('Api Adopet', () => {
             expect(res.status).to.be.equal(200); // A resposta da API deve retornar 200
             expect(res.body).is.not.empty; // A requisição não deve retornar com campo vazio
             expect(res.body).to.have.property('msg'); // O método property deve retornar todas as mensagens enviadas pelo usuário
-            expect(res.duration).to.be.lte(tempoEsperado); // lte significa menor que, espera que esse tempo seja inferior a variável
         })
     })
 })
