@@ -1,5 +1,5 @@
 describe('Api Adopet', () => {
-    const authorization = `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJlYWU5MjUzOS1hNzE0LTQ1MzktYTMzMC0xYmU3ZjAyYmVlNGMiLCJhZG9wdGVyTmFtZSI6IlJvbmFsZG8gQ2VzYXIiLCJpYXQiOjE3NzY3MjA2MzAsImV4cCI6MTc3Njk3OTgzMH0.Xe7lCZqaY-wQzJACxExOpdrJl58bQoIm8fg2x7Mdyvw`
+    const authorization = `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJlYWU5MjUzOS1hNzE0LTQ1MzktYTMzMC0xYmU3ZjAyYmVlNGMiLCJhZG9wdGVyTmFtZSI6IlJvbmFsZG8gQ2VzYXIiLCJpYXQiOjE3NzY5NTA4OTEsImV4cCI6MTc3NzIxMDA5MX0.Ecq_uQ5599wWBl4ILfC1WeIN01akKPQrSa2BOtKz7Jc`
 
     it('Perfil da API', () => {
         cy.request({
